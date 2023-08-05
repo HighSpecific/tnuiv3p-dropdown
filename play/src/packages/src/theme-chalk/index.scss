@@ -1,0 +1,46 @@
+@use './mixins/mixins.scss' as *;
+
+@include b(dropdown) {
+  position: relative;
+  width: 100%;
+
+  @include e(menu) {
+    position: relative;
+    z-index: inherit;
+    width: 100%;
+  }
+
+  @include e(content) {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: auto;
+    z-index: inherit;
+    transform-origin: center top;
+    transform: scaleY(0);
+    transition: transform 0.25s linear;
+
+    @include m(scroll-view) {
+      width: 100%;
+      height: inherit;
+    }
+
+    @include when(round) {
+      border-radius: 0rpx 0rpx 16rpx 16rpx;
+      overflow: hidden;
+    }
+
+    @include when(first-init) {
+      transition-duration: 0s;
+    }
+  }
+
+  /* 打开内容 start */
+  @include when(open) {
+    @include e(content) {
+      transform: scaleY(1);
+    }
+  }
+  /* 打开内容 end */
+}
