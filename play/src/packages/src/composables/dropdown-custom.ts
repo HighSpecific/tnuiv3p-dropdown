@@ -9,7 +9,8 @@ export const useDropdownCustomStyle = (props: DropdownProps) => {
   const ns = useNamespace('dropdown')
   // 解析背景颜色
   const [bgColorClass, bgColorStyle] = useComponentColor(
-    toRef(props, 'bgColor')
+    toRef(props, 'bgColor'),
+    'bg'
   )
 
   // 内容对应的类
