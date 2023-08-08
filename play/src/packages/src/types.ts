@@ -36,6 +36,13 @@ export const dropdownProps = buildProps({
     default: true,
   },
   /**
+   * @description 下拉框的阴影
+   */
+  shadow: {
+    type: Boolean,
+    default: false,
+  },
+  /**
    * @description 下拉菜单和内容之间的距离，默认单位rpx
    */
   menuContentGap: String,

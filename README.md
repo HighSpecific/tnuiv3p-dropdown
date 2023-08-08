@@ -128,6 +128,7 @@ const menuItemClickHandle = () => {
 | height            | 下拉框的高度，如果不设置则根据框的高度自适应，默认单位`rpx`  | String  | -       | -       |
 | overlay           | 是否显示遮罩                                                 | Boolean | `true`  | `false` |
 | border-radius     | 下拉框是否带圆角                                             | Boolean | `true`  | `false` |
+| shadow            | 下拉框内容显示阴影                                           | Boolean | `false` | `true`  |
 | menu-content-gap  | 下拉菜单和内容之间的距离，默认单位`rpx`                      | String  | -       | -       |
 | z-index           | zIndex                                                       | Number  | 999     | -       |
 

@@ -31,6 +31,7 @@ export default {
           contentClass,
           ns.is('round', borderRadius),
           ns.is('first-init', firstInit),
+          { 'tn-shadow': shadow },
         ]"
         :style="contentStyle"
       >
@@ -41,7 +42,8 @@ export default {
     </view>
 
     <TnOverlay
-      :show="overlay && openContent"
+      :show="openContent"
+      :opacity="!overlay ? 0 : 0.5"
       :duration="250"
       :z-index="zIndex - 1"
       @click="closeDropdown"

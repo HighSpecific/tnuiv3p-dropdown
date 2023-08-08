@@ -16,7 +16,8 @@ const menuItemClickHandle = () => {
       <TnDropdown
         v-model:open="openDropdown"
         menu-content-gap="10"
-        :border-radius="false"
+        :overlay="false"
+        shadow
       >
         <template #menu>
           <view class="dropdown-menu">
@@ -76,7 +77,7 @@ const menuItemClickHandle = () => {
       position: relative;
       width: 100%;
       height: 500rpx;
-      background-color: var(--tn-color-grey-light);
+      background-color: #fff;
     }
   }
 }
