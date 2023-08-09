@@ -31,7 +31,7 @@ export default {
           contentClass,
           ns.is('round', borderRadius),
           ns.is('first-init', firstInit),
-          { 'tn-shadow': shadow },
+          ns.is('shadow', shadow),
         ]"
         :style="contentStyle"
       >

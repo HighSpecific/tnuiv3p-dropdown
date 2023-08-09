@@ -26,6 +26,10 @@
       height: inherit;
     }
 
+    @include when(shadow) {
+      box-shadow: 0rpx 21rpx 30rpx -6rpx rgba(0, 0, 0, 0.03);
+    }
+
     @include when(round) {
       border-radius: 0rpx 0rpx 16rpx 16rpx;
       overflow: hidden;

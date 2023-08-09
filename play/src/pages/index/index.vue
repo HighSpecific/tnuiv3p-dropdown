@@ -13,12 +13,7 @@ const menuItemClickHandle = () => {
 <template>
   <view class="content">
     <view class="wrapper">
-      <TnDropdown
-        v-model:open="openDropdown"
-        menu-content-gap="10"
-        :overlay="false"
-        shadow
-      >
+      <TnDropdown v-model:open="openDropdown" :overlay="false" shadow>
         <template #menu>
           <view class="dropdown-menu">
             <view class="dropdown-menu-item" @tap.stop="menuItemClickHandle">
@@ -61,7 +56,7 @@ const menuItemClickHandle = () => {
 
       .dropdown-menu-item {
         flex: 1;
-        background-color: var(--tn-color-gray-light);
+        background-color: #fff;
         padding: 20rpx 0rpx;
         display: flex;
         align-items: center;
